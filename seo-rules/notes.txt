@@ -6,7 +6,7 @@ taking build with this command it auto update the names of the files so we need 
 
 need to robot.txt file 
 need sitemap.xml file 
-
+need .htaccess file in hostiner 
 
 
 google search console
@@ -58,4 +58,28 @@ follow rules for website creation
 7. use each component routes - loading in lazy uses 
 8. need to check no console errors 
 9. no settimeouts, no delays ,for better performance 
-10. 
+
+
+Better SEO
+----------------------------------
+
+
+1. use blobs for most searching content in google
+2. use h1 tags for title 
+3. use bold and italian for highlited tags
+4. external links atleast one 
+5. minimun inernal links 
+6. indexing 
+crwaling 
+meta tags 
+title 
+sitemap submit
+website submit to google 
+
+
+
+
+
+
+
+
