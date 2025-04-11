@@ -7,3 +7,55 @@ taking build with this command it auto update the names of the files so we need 
 need to robot.txt file 
 need sitemap.xml file 
 
+
+
+google search console
+--------------------------
+
+it is used to submit the website to google
+
+1. gives the company url to the rightside url inspection
+2. then verify with html data
+3. then in url inspection request indexing 
+4. submit the sitemap.xml file to this
+
+
+in xml files all links provide in the website to google crawl the website 
+
+robots txt for allow to crawl the website 
+
+
+
+
+
+
+
+google  search business 
+-------------------------------------
+https://business.google.com/in/business-profile/
+
+in this link we can submit the business 
+
+
+
+
+
+
+
+
+
+
+
+follow rules for website creation 
+------------------------------------------------------
+
+1. use atleast one outside google famous link like maps , google
+2. user more inside links 
+3. use clarity images and size in kbs 
+4. use index.html meta tags 
+5. use metaTag and title services for update in each component 
+6. use proper routing 
+7. use each component routes - loading in lazy uses 
+8. need to check no console errors 
+9. no settimeouts, no delays ,for better performance 
+10. 
