@@ -1,0 +1,9 @@
+
+ng build --configuration production
+
+taking build with this command it auto update the names of the files so we need to take with this build 
+
+
+need to robot.txt file 
+need sitemap.xml file 
+
