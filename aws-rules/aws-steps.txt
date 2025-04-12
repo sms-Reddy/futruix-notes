@@ -1,0 +1,27 @@
+1.root-email : lakkepogusyam@gmail.com
+2.root user password  : Shyam123@L 
+
+
+
+
+mobaxterm software 
+
+go to session ssh 
+
+
+
+
+
+ec2 serivce
+
+launch instance
+
+
+mobaxterm software
+----------------------------
+
+go to session ->  ssh ->  pulic-ip and user default ec2-user
+
+advanced settings use private key upload then linux machine opens 
+
+

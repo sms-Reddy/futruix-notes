@@ -1,0 +1,18 @@
+whoami -> username 
+pwd    -> present working directory 
+
+data    -> today date
+cal     -> calender
+
+
+
+
+file have 3 tyoes 
+----------------------------
+ordinary file
+directory file
+linking file
+
+
+directory means folder
+

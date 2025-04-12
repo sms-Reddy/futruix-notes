@@ -1,0 +1,59 @@
+What services do you offer?
+We provide web and mobile app development, UI/UX design, software consulting, and custom software solutions.
+
+Where are you located?
+We are based in Hyderabad, near JNTU, in the heart of the city’s tech corridor.
+
+Do you build apps for both Android and iOS?
+Yes, we develop cross-platform and native mobile apps for both platforms.
+
+How do you ensure on-time delivery?
+We follow agile methodologies, clear timelines, and weekly updates to stay on track.
+
+Are your prices affordable for startups?
+Absolutely. We offer budget-friendly packages tailored for startups and small businesses.
+
+Do you sign NDAs for projects?
+Yes, we value confidentiality and are happy to sign NDAs to protect your idea.
+
+What technologies do you specialize in?
+We work with React, Node.js, Flutter, Python, Laravel, and many more.
+
+Can you redesign my existing website or app?
+Yes! We offer redesign services to modernize and improve user experience.
+
+Do you offer maintenance after project delivery?
+Yes, we offer ongoing support and maintenance packages.
+
+What makes you different from other companies?
+Our commitment to quality, on-time delivery, and beautiful design sets us apart.
+
+Can you handle large-scale enterprise projects?
+Yes, we have the team and experience to deliver at scale.
+
+What is the first step to start a project with you?
+Just contact us via our website — we’ll schedule a free consultation.
+
+How long does it take to develop an app?
+It depends on the scope, but most apps take 4–12 weeks from start to finish.
+
+Do you provide UI/UX design as a separate service?
+Yes, our design team can work independently or with your dev team.
+
+Is SEO included with your website development?
+Basic SEO setup is included. Advanced packages are available on request.
+
+Can you help with branding or logos?
+Yes, we offer full branding solutions including logos and identity design.
+
+What industries do you specialize in?
+We’ve worked across fintech, healthcare, education, logistics, and more.
+
+Do you offer project-based or hourly billing?
+Both. You can choose based on what fits your needs.
+
+Can you scale the team quickly for big projects?
+Yes, we have a flexible team that can expand as your project demands.
+
+Why should I trust Futurix with my idea?
+We treat every project like it’s our own — with passion, precision, and professionalism.
