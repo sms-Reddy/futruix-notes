@@ -4,6 +4,163 @@ pwd    -> present working directory
 data    -> today date
 cal     -> calender
 
+touch  -> create empty file and multiple empty files created at one time
+mkdir  -> create adirectory means folder in windows
+rmdir --> remove driectory empty directory 
+rm    --> delete file 
+rm -r --> delete directory having content 
+
+ls -l -> list of names in alphabetical orders 
+
+ls lr  --> list of items in reverse alphabetical orders
+ls lt  --> list based on created
+
+ls ltr --> list based on reverse created 
+
+starts with dr -> directory
+starts with -  -> file
+
+cat > textfilename with extention -> create a file with some data 
+
+cat textfilename with extention  -> display the data in file
+
+cat >> textfilename with extention -> append  some data to existing file
+
+cat -n file  --> adding the lines when display the data 
+
+
+cat file > cat anotherfile ---> copy the data into second 
+
+tac  --> reverse the content 
+
+rev  --> reverse of each line 
+
+rm filenamewith extention --> delete 
+
+cd  -> change directory
+
+cd ../..  --> two steps backward 
+
+Logs
+------------------------------
+   
+head  ---> it displays first 10 lines 
+tail  ---> it displays last l0 lines 
+
+head -n 5 ---> it displays 5 count without sl no 
+
+
+wc   ---> word count
+        result : lines words characters
+
+cp also copy for used but only one file to another file 
+
+mv old new  --> rename the file
+
+
+cmp ---> compare of two files   --> it displays only first 2 in 2 files
+diff  ---> compare of two files  --> it display all in 2 files
+
+grep  ---> global regular expression list ---> for search 
+grep -i "AWS" --- this is command for above grep
+
+-w --> search complete word 
+
+-R ---> search all directories
+-i  ---> ignore case sensitive
+
+-h ---> unmatechd lines
+
+-n ---> matched lines and numbers 
+
+-c --> count of files matches 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+edit the file
+----------------------------------------------
+Visual Editor
+-------------
+vi  -- used to edit the file 
+
+vi file if it exista it open or not exists it creates a new 
+
+
+
+
+command mode 
+insert mode 
+escape mode
+
+vi -> escape to edit  --> escape mode   - :wq  -> write and quit and :q! quit with save
+
+
+
+
+
+
+
+
+k -> moves cursor onle line 
+j -> down line 
+h -> left one character 
+i -> riht one step 
+$ -> positions cursor at the end of line
+0 -> start of line
+w -> next word
+b -> previoud word
+h -> move to yop screen 
+nH -> move to the nth line of the screen
+m -> move to the middle screen
+l -> bottom of screen
+nL -> nth line of bottom screen
+
+:12  -> 
+
+
+
+
+ 
+
+
+SED
+------------------------
+Stream Editor
+
+replce  
+
+$ sed s/word/replaceword/1 or g by default 1 
+
+$ sed '5d' delete 5th line
+
+$ sed '$d' delete last line
+
+$ sed '12,$d'  12 th to all deleted
+
+by default sed data are not stored in file 
+
+we need to set changes in origina file then -i we need to give it 
+
+$ sed -i '12,$d'  12 th to all deleted
+
+
+
+
+
+
+
 
 
 

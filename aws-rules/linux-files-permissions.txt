@@ -1,0 +1,165 @@
+most important topic in Linux
+-------------------------------------------
+
+File-Permissions
+============================
+
+three types of permissions of file
+
+1.user permissions
+2.group permissions
+3.other permissions
+
+user    group    other
+XXX-XXX-XXXX
+
+r  - read
+w  - write
+x  - execute 
+
+rw-rw-r--
+
+
+
+modify the permissions
+-------------------------
+
+chmod   command used 
+
+    + for add 
+    - for remove 
+
+    we can give more than one permisson 
+
+    u+rwx  like this
+    ugo+rwx 
+
+    7 represents - rwx 
+    6 - rw-
+    5 - r-x
+    4 - r--
+    3 - -wx
+    2 - -w-
+    1 - --x
+    0 - ---
+
+these are case sensitive 
+
+chmod u+x file.txt
+
+
+
+
+
+
+
+
+
+
+
+USER ACCOUNTS
+-------------------------------------------
+
+$ sudo is use as super user 
+
+$ sudo useradd <username>
+$ sudo passwd <username>
+
+$sudo su --> become a root user 
+
+exit --> default user 
+
+sudo su username 
+
+  sudo userdel ---> delete user
+
+
+    in e2c/group path 
+
+    sudo groupadd groupname
+
+    sudo usermod -aG groupname username 
+
+    to display all of user -> id 
+
+    sudo gpasswd -d username groupname
+
+    sudo groupdel groupname 
+
+
+    search the file 
+    --------------------
+    mlocate --> internally linux was stored local dir and file names 
+
+
+    locate or find 
+
+    locate -c *.txt  count of txt files 
+    locate apache 
+    locate -c apache
+
+    find is used all the files in the linux system 
+    --------------------------------
+
+    find /home -name file.txt 
+
+    it search only user directories 
+
+    find /home -type f -empty   ---------- empty files in home directory 
+
+
+
+
+
+
+Chown 
+-----------------------
+
+chown is used change the owner of file 
+
+chown usename filename       chnage filename 
+chown :groupname filename    chnage groupname 
+
+chown username:groupname filename   chane both 
+
+
+
+man cat  ---> display all commands on cat
+
+
+
+check connectibity 
+--------------------------
+check the connectivity 
+----------------------------
+ping www.instagram.com 
+
+ifconfig  -> ip address of linux machine 
+
+ response access after hit
+-------------------
+curl url 
+
+
+
+
+download softwares
+------------------------------
+wget url
+
+install softwares 
+-------------------------
+package managers 
+
+
+amazon linux /cent Os / redhat linux   -----> yum is used 
+ubuntu  -----------------------------> apt-get 
+
+
+
+
+
+
+
+
+

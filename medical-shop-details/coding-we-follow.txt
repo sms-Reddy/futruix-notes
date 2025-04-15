@@ -1,0 +1,18 @@
+1.Jhipster generation
+
+2. authentication jwt tokens only we need 
+
+3. mobile apk andorid and ios
+
+4. first we develop a web with some details in two pages 
+
+    fast delivery and free delivery 
+    discount details 
+    some banner 
+    and login 
+
+    if we login with user then only shows medicines to buy 
+
+    if we login with admin then items should be add delete admin  actions can do 
+
+  
