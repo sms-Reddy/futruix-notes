@@ -1,0 +1,13 @@
+ip address : 147.93.99.231
+port : 65002
+username : u257850824
+password: need to change
+
+in git 
+
+in project setting deploy keys ssh key should added getting form hostinger 
+
+after add ssh key in hostinger and 
+
+
+for auto-deployement webhook url present in hostinger and that should add in git project webhooks

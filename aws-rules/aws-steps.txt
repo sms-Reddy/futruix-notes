@@ -120,3 +120,87 @@ private
 elastic / static
 
 
+
+here every machine has public and private ip 
+
+private ip not changed and public ip is changed 
+
+and stattic public ip we can crete by using elastic ip (paid) - commercial 
+
+storage
+----------------------------
+
+elastic block store (ebs)
+
+when we create an instance by default we get root value 
+
+root value is 8gb for linux 
+for windows 30gb 
+
+when we terminate instance then root volume will be terminated 
+should ot delete the root volume direcly
+
+we can attach and detach attditional volumes like harddisk or pendrive 
+
+if we terminate ec2 additionl volume is not deleted 
+
+if we add multiple instances but only one after one 
+
+we can store upto 16tb data in additionl volume 
+
+it is based on zone specific 
+
+5 types of ebs
+------------------------
+
+general purpose ssd
+provisioned iops
+throgout optimized 
+cold hdd
+magnetic
+
+
+for provisioned iops (i02) volumes can add multiple instances at a time ... 
+
+
+
+Mounting 
+--------------------------
+
+1. lsblk  -- to check the volumes 
+2. by defaultly xvdf shown 
+3. creat a dirctory
+4.sudo mount /dev/xvdf newDirectory    --- cd to directory 
+5 df -h   --- check the mounts
+6. cd newDirectory 
+7.create some file and  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ec2 instance 
+instance Types
+ip types
+AMI (amazon machine image)
+security group
+storage 
+connect linux 
+connect windows 
+
+
+
+
