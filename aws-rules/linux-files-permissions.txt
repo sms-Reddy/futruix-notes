@@ -156,6 +156,36 @@ amazon linux /cent Os / redhat linux   -----> yum is used
 ubuntu  -----------------------------> apt-get 
 
 
+$ sudo yum update -y  --- update existing packages 
+
+
+$sudo yum install git  --- install packages   
+
+
+
+
+httpd serivce
+-------------------------
+
+service httpd status ------ check availabaility 
+
+sudo yum update httpd  
+
+sudo yum install httpd
+
+sudo service httpd start
+
+after started package with public ip address we can access direclty in google
+
+directory cd /var/www/html
+
+sudo vi index.html
+
+    write h1 tag some content 
+
+
+
+
 
 
 

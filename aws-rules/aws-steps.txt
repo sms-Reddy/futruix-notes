@@ -24,4 +24,99 @@ go to session ->  ssh ->  pulic-ip and user default ec2-user
 
 advanced settings use private key upload then linux machine opens 
 
+ec2
+ebs
+s3
+rds
+dynamodb
+vpc
+iam 
+route 53
+efs
+ecs 
+eks
+cloudwatch
+sns 
+ses
+sqs
+cloud formation
+lambda
+elb
+cloud front
+code build
+code commit
+lightsail
+beanstack
+fargate
+
+
+
+when we are creating an instance in e2c then aws provide default storage and default network
+
+    storage in ebs (elastic block store) and network in vpc (virtual private cloud)
+    key pair and security group also
+
+
+
+configure storage --> 30gb 
+
+
+key-pair should used for multiple instances 
+
+key-pairs are free 
+
+
+
+windows machine connect
+------------------------------------------
+
+    download pem file 
+
+    connect in rdm not in putty 
+
+
+
+instances
+=-====================
+
+reserved
+ondemand -- advanced booking 
+spot -- bidding 
+-----
+
+    72 percent savings of price 
+
+dedicated 
+
+
+
+mimimun billing period is per hour 
+
+
+Ec2 instance families
+
+-------------------------------
+
+t1 t2 r3 t4 
+
+
+AMI (amazon machine image )
+----------------
+ it is type of template with some default dependencies 
+
+
+
+Types of IP's
+---------------------------
+
+Ips means Internet Protocol
+
+every machine should one ip address 
+
+3 types 
+------------
+public 
+private 
+elastic / static
+
 
