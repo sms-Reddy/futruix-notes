@@ -1,0 +1,226 @@
+1.DOM
+---------------------------
+
+    DOcument object model . whenever we load the webpage e complete html converts into tree like structure it is called DOM 
+
+
+2. d/b transitions and animations
+---------------------------------------
+
+    transitions: it has smooth changes between two states 
+                    it has requires both start and end states
+                    triggered only when we clicks or hover
+
+    animations : can create multi step animations
+                    run automatically when triggered  
+                    use keyframes for animations 
+
+3. inline block and inline block 
+-----------------------------------------------
+
+    inline :
+    ----------------
+        inline comes in straight line and it occupies the widdh based on text 
+    block :
+    ---------------
+        block element occupies the complete width of that block
+    inline-block:
+    ---------------
+        inline block means we need to decide width and height of the tag without mention it also works as block 
+
+4. semantic and non semantic tags
+-----------------------------------------
+
+    semantic tags:
+    -----------------------------
+        a tag with meaningful name known as semantic 
+            ex : header , footer , aside , article, section ,main , mark 
+    non-semantic tags : div , p , h , span, 
+    --------------------
+
+5 . Life cycle hooks
+--------------------------------
+
+    1.ngOnchanges 
+    -----------------------
+
+        it triggers whenevr @input value changes then it triggers 
+
+    2. ngOnInit
+    --------------------
+
+        it triggers whenever we load the component class
+    
+    3. ngDoCheck
+    ---------------------
+
+        it triggers after change detection cycle executed 
+
+    4. ngAfterContentInit
+    ---------------------
+
+        it triggers after component intialized all the content projected into a component 
+
+        only one time 
+
+    5. ngAfterContentChecked 
+    ----------------------------
+
+        it triggers after change detection on the  content projected into a component every time 
+
+    6. ngAfterViewInit
+    -------------------
+
+             it triggers after the fully intialization of component
+
+    7. ngAfterViewChecked
+    ------------------------
+
+        It triggers every time change detection on view and its child view 
+
+    8. ngOnDestroy
+    -------------------
+
+        whenever we destroy the component when it triggers
+
+
+6 . difference between constructor and ngOnInit
+-----------------------------------------------------------
+
+        constructor 
+        --------------------
+            constructor is the instance of the component . it is used to inject the service files and injectable fields 
+
+        ngOnInit
+        ----------
+
+            it is the life cycle of hook of angular . it is used to whenver the component opens then it will triggers 
+
+
+7 . Decarators
+----------------------------
+
+    Decorators are how angular class decides whether it is component service or directive 
+
+8. Selectors 
+-------------------------
+
+    Selectors are the property field in component 
+    it is used like tag or property  where we show the content of  component.
+
+9. Service 
+-------------------------
+    it is used to share the logic or data between multiple compoenents
+
+    instead of copying same code into multiple times we can write in service file and we use service file
+
+10. Injectable
+-----------------
+
+    we can use this @injectable decoratory then we can use through inject in any component of project 
+
+11. NgModule
+-------------
+
+    it is used to organize and group of components and pipes and service directives 
+
+12. custom pipe creation 
+-----------------------------
+
+    pipes are used to manipulate the value of variable present 
+
+
+        @Pipe({
+            name : pipe
+        })
+
+        Export class customPipe implements PipeTransform {
+
+            transform(value){
+                if(value){
+                    return value value.toUpperCase()
+                }
+            }
+        }
+
+    pipe and pipetransform coming from angular core 
+
+
+13. Directives 
+----------------------------------
+    directives are used to change the actual dom or properties of  elements 
+    1. structural driectives 
+    -------------------------------------
+
+        *ngIf *ngFor and *ngSwitch 
+
+    2. Attribute directives 
+    ----------------------------
+
+        these are used to chnage the property of the element 
+
+    3. custom directive 
+    ----------------------------
+
+        it is used to change the dom and properties based on requirment 
+
+        @directive({
+            selector : '[directive]'
+        })
+        Export class customDirective {
+            @Input directive :any = 0
+
+            constructor(private ele : elementRef){}
+            ngOnInit(){
+
+                this.el.nativeElement.setStyle('color',red)
+
+            }
+        }
+
+14. view child and view children , contentchild and contentchildren 
+-------------------------------------------------------------------------------
+
+
+
+15. Performance Optimization
+---------------------------------
+
+
+16. Change Detection Strategy 
+-------------------------------
+
+17. what is rxjs
+--------------------------
+
+18. subscribe , unsubscribe , emit , next , observables 
+-------------------------------------------------------------
+
+19. subject and behaviourSubject
+---------------------------------------
+
+20.signal
+----------------
+
+21. standalone
+----------------------
+
+22. debounce and throttling
+------------------------------
+
+23.fork join and switchMap 
+------------------------------
+
+24. Promises 
+--------------------
+
+25. event looping
+------------------------
+
+26. let const and var
+------------------------
+
+27. Route guards 
+-------------------------
+
+28. 

@@ -173,12 +173,33 @@ Mounting
 4.sudo mount /dev/xvdf newDirectory    --- cd to directory 
 5 df -h   --- check the mounts
 6. cd newDirectory 
-7.create some file and  
+7.create some file and 
+
+
+
+list of disk names 
+
+old -- xvda
+new -- nvme0n1
 
 
 
 
 
+
+
+Snapshots
+---------------
+    backup of the volume 
+    volume to snapshot or vice versa for create
+
+    volumes or zone specific
+
+    snapshots are regional spcific 
+
+    snapshots are stored in s3 
+
+    by defaulty it is private and we convert into public 
 
 
 
@@ -200,7 +221,9 @@ security group
 storage 
 connect linux 
 connect windows 
-
+volumes
+additional volumes
+snapshots
 
 
 

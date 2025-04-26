@@ -1,0 +1,244 @@
+application {
+  config {
+    baseName PharmaDelivery,
+    applicationType monolith,
+    packageName com.pharma.delivery,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    buildTool maven,
+    clientFramework angular,
+    serverPort 8080
+  }
+}
+
+enum UserLevel {
+  SUPER_ADMIN,
+  PHARMACIST,
+  DELIVERY_AGENT,
+  USER
+}
+
+// Auditable fields for tracking user/time
+abstract Auditable {
+  createdBy String,
+  createdDate Instant,
+  lastModifiedBy String,
+  lastModifiedDate Instant
+}
+
+entity AppUser extends Auditable {
+  login String required unique,
+  passwordHash String required,
+  email String required,
+  level UserLevel required,
+  createdDate Instant,
+  isActive Boolean
+}
+
+entity UserProfile extends Auditable {
+  mobileNumber String required,
+  isOtpVerified Boolean,
+  registrationDate Instant,
+  isPrime Boolean,
+  referralCode String,
+  referredBy String,
+  referCount Integer,
+  primeActivatedDate Instant,
+  address String,
+  city String,
+  pincode String
+}
+
+entity OtpVerification extends Auditable {
+  otpCode String required,
+  sentTime Instant,
+  verified Boolean
+}
+
+entity DrugCombination extends Auditable {
+  name String required unique,
+  description String
+}
+
+entity Company extends Auditable {
+  name String required unique,
+  description String
+}
+
+entity Storage extends Auditable {
+  name String required unique,
+  description String
+}
+
+entity SheetCount extends Auditable {
+  count Integer required,
+  description String
+}
+
+entity DiseaseType extends Auditable {
+  name String required unique,
+  description String
+}
+
+entity GenericType extends Auditable {
+  name String required unique,
+  description String
+}
+
+entity UsageType extends Auditable {
+  type String required unique,
+  description String
+}
+
+entity Discount extends Auditable {
+  name String required unique,
+  description String,
+  percentage Double required,
+  isActive Boolean,
+  startDate Instant,
+  endDate Instant
+}
+
+entity MedicineType extends Auditable {
+  name String required unique,
+  description String
+}
+
+entity Medicine extends Auditable {
+  name String required unique,
+  mfgDate Instant,
+  expiryDate Instant,
+  description String,
+  quantity Integer,
+  actualPrice BigDecimal,
+  sellPrice BigDecimal,
+  barCode String,
+  prescriptionRequired Boolean,
+  createdDate Instant,
+  updatedDate Instant,
+  ratingAverage Double,
+  isAvailable Boolean
+}
+
+entity Cart extends Auditable {
+  isPrescriptionUploaded Boolean,
+  checked Boolean,
+  createdDate Instant
+}
+
+entity CartItem extends Auditable {
+  quantity Integer,
+  isChecked Boolean,
+  addedAt Instant
+}
+
+entity Wishlist extends Auditable {
+  addedDate Instant
+}
+
+entity Order extends Auditable {
+  orderCode String required,
+  orderDate Instant,
+  deliveryDate Instant,
+  totalPrice BigDecimal,
+  isFreeOrder Boolean,
+  status String,
+  paymentStatus String,
+  deliveryAddress String,
+  trackingId String
+}
+
+entity OrderItem extends Auditable {
+  quantity Integer,
+  price BigDecimal
+}
+
+entity Prescription extends Auditable {
+  uploadedAt Instant,
+  image Blob,
+  approvedBy String,
+  isApproved Boolean,
+  remarks String,
+  prescriptionDate Instant required,
+  validUntil Instant,
+  isExpired Boolean
+}
+
+entity DeliveryNotification extends Auditable {
+  sentTo String,
+  sentAt Instant,
+  orderCode String
+}
+
+entity UserOrderHistory extends Auditable {
+  orderCode String,
+  orderDate Instant,
+  totalPrice BigDecimal,
+  itemCount Integer
+}
+
+entity NonMedicineItem extends Auditable {
+  name String required,
+  description String,
+  price BigDecimal,
+  available Boolean
+}
+
+entity Payment extends Auditable {
+  paymentId String required,
+  orderCode String,
+  paidAt Instant,
+  method String,
+  amount BigDecimal,
+  status String
+}
+
+entity Rating extends Auditable {
+  rating Integer required min(1) max(5),
+  review String,
+  createdDate Instant
+}
+
+relationship ManyToOne {
+  Medicine{drugCombination} to DrugCombination,
+  Medicine{company} to Company,
+  Medicine{storage} to Storage,
+  Medicine{sheetCount} to SheetCount,
+  Medicine{diseaseType} to DiseaseType,
+  Medicine{genericType} to GenericType,
+  Medicine{usageType} to UsageType,
+  Medicine{discount} to Discount,
+  Medicine{medicineType} to MedicineType,
+
+  CartItem{medicine(name)} to Medicine,
+  CartItem{cart} to Cart,
+
+  Wishlist{medicine} to Medicine,
+  Wishlist{user} to AppUser,
+
+  Cart{user} to AppUser,
+
+  Order{user} to AppUser,
+  OrderItem{medicine} to Medicine,
+  OrderItem{order} to Order,
+
+  Prescription{cart} to Cart,
+  Prescription{approvedByUser} to AppUser,
+  Prescription{uploadedBy} to AppUser,
+
+  DeliveryNotification{order} to Order,
+
+  UserOrderHistory{user} to AppUser,
+
+  UserProfile{user} to AppUser,
+  OtpVerification{user} to AppUser,
+
+  Rating{user} to AppUser,
+  Rating{medicine} to Medicine,
+
+  Payment{order} to Order
+}
+
+paginate * with pagination
+service * with serviceClass
+dto * with mapstruct

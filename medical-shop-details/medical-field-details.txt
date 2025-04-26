@@ -1,0 +1,59 @@
+Categories by Condition
+=============================================
+
+Fever & Cold
+
+Diabetes Care
+
+Heart Health
+
+Pain Relief
+
+Stomach Care
+
+Skin & Hair
+
+Women's Health
+
+Men's Health
+
+Baby & Child Care
+
+Sexual Wellness
+
+
+Health Supplements
+================================================
+
+Vitamins
+
+Protein Powders
+
+Immunity Boosters
+
+Weight Management
+
+
+Personal Care
+======================================
+Hygiene (Sanitizers, Soaps)
+
+Oral Care
+
+Hair Care
+
+Skin Creams
+
+Lab Tests / Diagnostics (optional if integrated)
+============================================
+Book a Test
+
+Home Sample Collection
+
+Reports
+
+Upload Prescription
+============================================
+Manual upload
+
+Chat with Pharmacist for clarification
