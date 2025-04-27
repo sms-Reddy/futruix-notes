@@ -298,19 +298,51 @@
     ------------------------
 
         automatic memory Management features  provided by languages by java 
+        remove unused objects 
 
     4. Memory Leaks 
     ----------------------
 
-    5. Memory Fragmentation
-    ---------------------------
+        memory not relased properly   
+
     
 
 8. Serialization & Deserialization
 ------------------------------------
 
+    Serialization
+    ------------------
+        it converts into object into byte stream
+
+    Deserialization
+    -------------------
+
+        it converts byte code into object 
+
 9. spring and springboot difference
 -------------------------------------
+
+    Spring
+    ------------
+
+        spring is big framwork. it needs manual configuration
+
+        it contains spring security , springboot, 
+        spring uses inversion of control dependancy injection
+
+        spring creates war file and uses exteranal servcer to deploy
+
+    springboot
+    -----------
+
+        it is the minimal configuration setup 
+
+        and development with sprngboot is also faster 
+
+        it contain inbuid embneded server 
+
+        springboot-starter dependancy added 
+                it includes springboot, sb configue, sb aop more like this 
 
 10. why springboot
 ---------------------
@@ -321,11 +353,41 @@
 12. Inversion of control
 ----------------------------
 
+    it is the giving access of creating objects of classes to the framework is known as ioc 
+
+        developers can control the creations and connections      
+
 13. Dependancy injection
 ----------------------------
 
+    3 types
+    ------------------
+        1, constructor injection
+        -----------------------------
+
+            dependencies are provided by in constructor
+            best for mandatory dependency
+
+
+        2. autowired injection
+        --------------------------
+            dependencies are provided by @autowired Annotations
+
+
+        3. setterinjection
+        --------------------
+
+            dependencies are provided throghy setter method and autowired Annotations aslo used
+
 14. ORM Concepts
 -------------------
+
+    to convert java objects into database table and viceversa 
+
+        Entity
+        primary key 
+        relationships 
+        lazy and eager loading 
 
 15. @RestController, @RequestMapping
 ----------------------------------------
@@ -441,9 +503,33 @@
 
     1. ArrayList and LinkedList
     --------------------------------
+        arraylist 
+        ---------------
+            dynamic array 
+            faster access 
+            slow insertion
+            less memory 
+
+        LinkedList
+        ------------------
+            slower access 
+            faster insertion
+            high memeory 
+
 
     2. set and array
     ------------------
+        set 
+        ------------
+            duplicates not allows 
+            du=ynamic size
+           Not maintain order
+
+        list 
+        --------
+            duplicates allowed 
+            slow for access 
+            maintain iindex order
 
     3. hashset and linkedhashset and treeset 
     ----------------------------------------
@@ -457,18 +543,22 @@
 
 41. How to create pagination 
 --------------------------------
-    1. pAgeble Interface 
-    -----------------------------
+   In Spring Boot, pagination is handled using Pageable and Page interfaces, 
+        typically combined with PageRequest.of(page, size) method.
 
-        page and size 
-        ------------------
-
+        
 
 42. Table Criteria
 -----------------------
 
 43. Comparator and Comparing
 ------------------------------------
+
+    Comparator is the functional interface and comparing is the static method and compare is abstract method 
+
+
+
+    it is used to comparing the values  
 
 44. Runnable 
 -----------------
@@ -533,7 +623,93 @@
         10. delete 
         11. distinct 
 
-48. 
+48. How does HashMap work internally?
+------------------------------------------
+
+    internally hashmap uses a array of buckets 
+
+        it calculates hashCode() of the key
+        converts hashcode into bucket index 
+        stores key value pair in the bucket 
+
+
+49. What is Spring Boot Auto-Configuration? How does it work?
+--------------------------------------------------------------
+
+
+
+50.How do you secure your REST APIs in Spring Boot?
+ ---------------------------------------------
+    
+    authentication
+    authorization
+    by using spring security
+    by using jwt tokens we can secure the Rest APIs
+    cors configuration
+    csrf protection (cross site request forgery)
+    enable https 
+    secure sensitive code 
+
+
+
+ 
+51. difference between jpa and Hibernate
+---------------------------------------------
+
+    jpa is a interface and hibernate is the implementation 
+
+    we write code using jpa but ihipster runs using hibernate 
+
+52. wrapper datatypes
+-----------------------------
+    it is the object type of data types 
+
+        int integer
+        long long
+        char Character 
+        boolean Boolean 
+
+    it is used when parseInt or parseBoolean 
+
+    
+
+
+
+
+
+
+
+
+
+
+How would you design an application with microservices if your project grows?
+------------------------------------------------------------------------------------
+
+
+How would you improve the performance of a slow REST API?
+--------------------------------------------------------------------
+
+
+If the front-end is not able to call the backend API, how will you debug it?
+------------------------------------------------------------------------------------
+
+How would you handle security vulnerabilities in your application?
+------------------------------------------------------------------------------
+
+
+✨ Bonus: HR + Soft Skills Questions
+Tell me about a challenging bug you solved recently.
+-------------------------------------------------------------------
+
+How do you handle deadlines when multiple projects are assigned?
+----------------------------------------------------------------------
+
+Why do you want to join our company?
+-----------------------------------------------
+
+What are your long-term goals as a developer?
+-----------------------------------------------------
+
 
 
 

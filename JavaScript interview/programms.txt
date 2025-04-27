@@ -6,7 +6,7 @@ Reverse a string without using library functions
 ---------------------------------------------------------
 
 
-String value = "hibye";
+    String value = "hibye";
 
     String[] data = value.split("");
      String reverseData;
@@ -43,8 +43,32 @@ Print all permutations of a string
 
 ✅ Number Programs
 Check if a number is prime
+------------------------------------
+ public static boolean isPrime(int n) {
+        if (n <= 1) {
+            return false;  // Numbers less than or equal to 1 are not prime
+        }
+        
+        // Check divisibility from 2 to square root of n (optimization)
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;  // If n is divisible by i, it's not prime
+            }
+        }
+        return true;  // If no divisors are found, it's a prime number
+    }
 
 Find factorial of a number (recursion + loop)
+--------------------------------------------------
+
+ public static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;  // Base case: factorial of 0 or 1 is 1
+        } else {
+            return n * factorial(n - 1);  // Recursive call
+        }
+    }
+    
 
 Print Fibonacci series (recursion + loop)
 
