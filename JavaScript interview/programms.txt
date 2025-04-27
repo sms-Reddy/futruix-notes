@@ -1,0 +1,136 @@
+
+
+ Important Java Programs to Practice
+✅ String Programs
+Reverse a string without using library functions
+---------------------------------------------------------
+
+
+String value = "hibye";
+
+    String[] data = value.split("");
+     String reverseData;
+
+    for(int i = data.length ; i >= 0; i--){
+
+        reverseData += data[i]
+
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+Check if a string is a palindrome
+
+Find the first non-repeating character in a string
+
+Count vowels and consonants in a string
+
+Remove all duplicate characters from a string
+
+Find if two strings are anagrams
+
+Print all permutations of a string
+
+✅ Number Programs
+Check if a number is prime
+
+Find factorial of a number (recursion + loop)
+
+Print Fibonacci series (recursion + loop)
+
+Check if a number is Armstrong number (e.g., 153)
+
+Check if a number is palindrome (e.g., 121)
+
+Find the greatest common divisor (GCD) of two numbers
+
+Swap two numbers without using a third variable
+
+Print all prime numbers between 1 to 100
+
+✅ Array Programs
+Find the largest and smallest number in an array
+
+Find the second largest number in an array
+
+Remove duplicates from an array
+
+Find missing number in an array (from 1 to N)
+
+Find pairs in an array whose sum is a given number
+
+Left rotate an array by 1 or N positions
+
+Sort an array without using built-in methods
+
+✅ Collection Programs
+Sort a list of strings by their lengths
+
+Find frequency of each character in a string using HashMap
+
+Find duplicate elements in a List
+
+Remove duplicate elements from a List
+
+Merge two lists and remove duplicates
+
+Sort a Map by values
+
+Group elements of a List using Streams (e.g., group by first letter)
+
+✅ Linked List Programs
+Reverse a linked list (Iterative and Recursive)
+
+Detect a loop in a linked list
+
+Find the middle element of a linked list
+
+Remove duplicates from an unsorted linked list
+
+✅ Recursion Programs
+Print numbers from N to 1 using recursion
+
+Calculate power of a number using recursion
+
+Find sum of digits of a number using recursion
+
+✅ Pattern Printing
+Print pyramid/star patterns
+(Example: Half Pyramid, Full Pyramid, Diamond, etc.)
+
+plaintext
+Copy
+Edit
+*
+* *
+* * *
+* * * *
+Print number patterns
+(Example: Pascal’s Triangle, Floyd’s Triangle)
+
+⚡ Bonus Programs
+Design an immutable class
+
+Implement a Singleton class
+
+Implement Producer-Consumer problem using Threads
+
+Create a custom Exception
+
+Implement custom Sorting using Comparator
+
+Java 8 Streams example: Filter, Map, Reduce
+
+Java 8: Convert List to Map using Streams
+
+

@@ -1,0 +1,541 @@
+1. String Builder and StringBuffer and String
+-----------------------------------------------------
+    String: Immutable. Every modification creates a new object.
+    StringBuilder: Mutable and non-synchronized (not thread-safe but faster).
+    StringBuffer: Mutable and synchronized (thread-safe but slower).
+
+
+2. OOPS
+--------------------
+
+    2.1 Inheritance
+    ------------------
+
+        Code reuse.
+
+        A child class inherits fields and methods of the parent class.
+
+        Java supports single inheritance (multiple inheritance through interfaces).
+
+    2.2 Abstraction
+    -----------------------
+
+        hide implementation and only show the functionality of method 
+
+    2.3 Encapsulation
+    ------------------------
+
+        wrap the data into a single Unit 
+        it is acheived by using setters and getters method 
+
+    2.4 Polymporphism 
+    -------------------
+
+        runtime Polymporphism:
+        -----------------------
+
+            when error comes in run time 
+            child class provides specific implementation 
+
+        compile time Polymporphism:
+        -----------------------------
+            within same class whenever same name but different parameeters 
+
+3. 1.8 features 
+----------------------------
+    3.1 Optional 
+    ---------------
+
+        optional is used to avoid the null pointerException 
+
+                when we are getting data by id or name then it not present it will retuns null in that case we are using optinal 
+
+    3.2 Functional Interface
+    ------------------------
+
+        an interface with one abstract method is known as Fi 
+        they are used to primarly define the behaviour expected in lmbda expressions
+
+    3.3 Lambda Expression
+    ----------------------
+
+        it is a unnamed function and it is simplify the methods from functional interface 
+       
+
+
+    3.4 Default methods
+    ---------------------
+
+        one method with some implementation in interface is known as default methods 
+
+            we acn override if u cannot override interface implementation will executes 
+
+    3.5 Streams
+    ---------------
+
+        streams is used to process the sequence of elements . it has no storage 
+
+            streams contains two level operators 
+
+            1. terminal operators 
+            ----------------------
+
+                with this stream can be retunr the values 
+
+                .sum 
+                count()
+                collect()
+                reduce()
+                forEach()
+
+
+            2. intermediate operators
+            -----------------------------
+
+                these operatoins return a new stream 
+                    Filter
+                    map()
+                    distinct()
+                    sorted()
+
+    3.6 Collectors 
+    -------------------
+
+        Collectors are used to collect the data from a stream into List or set or map 
+
+    3.7 Method Reference 
+    ---------------------------
+
+        method reference are a shorthand notation of lambda expression that call a method directly 
+
+    3.8 New Date and time
+    --------------------------
+
+        it is introduecd to fix the issues with calender and ol date 
+
+        it is immutable and thread safe 
+
+            LocalDate
+            LocalTime
+            LocalDateTime
+            ZonedDateTime 
+
+4. Collections
+======================
+    4.1 List
+    --------------------
+        4.1.1 ArrayList
+        ------------------------
+
+        Resizable array.
+
+        Fast for retrieval.
+
+        Slow for insertion/deletion (because of shifting elements).
+
+    4.1.2 LinkedList
+    ----------------------
+
+        Doubly linked list implementation.
+
+        Fast for insertion/deletion.
+
+        Slower for retrieval compared to ArrayList.
+
+4.2 Set
+--------------
+    4.2.1 LinkedHashSet
+    -----------------------
+
+        Maintains insertion order.
+
+        No duplicates allowed.
+
+    4.2.2 HashSet
+    ---------------------
+
+        No order maintained.
+
+        No duplicates allowed.
+
+        Backed by a HashMap internally.
+
+    4.2.3 TreeSet
+    -------------------------------
+
+        Sorted set (elements stored in natural order or using a Comparator).
+
+        No duplicates allowed.
+
+        Slower than HashSet (because of sorting).
+
+4.3 Queue
+---------------------------
+    4.3.1 PriorityQueue
+    ------------------------------
+
+        Elements are ordered according to natural ordering or custom comparator.
+
+        Based on a heap structure.
+
+    4.3.2 ArrayDeque
+    -------------------------------
+
+        Resizable array that can be used as a stack (LIFO) or queue (FIFO).
+
+4.4 Map (Not part of Collection Interface, but related)
+------------------------------------------------------
+    4.4.1 HashMap
+    -----------------------
+
+        Key-value pairs.
+
+        No order maintained.
+
+        Allows one null key and multiple null values.
+
+    4.4.2 LinkedHashMap
+    ----------------------------
+
+        Maintains insertion order.
+
+        Same as HashMap otherwise.
+
+    4.4.3 TreeMap
+    ---------------------------
+
+        Sorted by keys.
+
+        Does not allow null keys.
+
+        Based on Red-Black tree.
+
+    4.4.4 Hashtable
+    ---------------------------
+
+        Synchronized version of HashMap.
+
+        Does not allow null keys or values.
+
+5. Interfaces and Abstraction Classes
+---------------------------------------
+
+6. Exception Handling
+----------------------------
+
+    it is two types 
+
+        1. checked exception 
+        ---------------------------
+
+            checked exceptions is a exceptions that must be caought  or declared in method signature throws 
+
+                ex : IO 
+                    SQL
+                    ClassNotFound
+                    FileNOtFound
+
+
+        2. unchecked exception
+        ---------------------------
+
+            unchecked excpetions are runtime exceptions 
+
+                    nullPointerException
+                    arrayIndexBoundOutOfException
+                    ArithematicExc
+                    IllegalArgumnetExce
+
+
+        try catch and finally block 
+        --------------------------------
+
+            try{
+                implementation 
+            }catch(exception e){
+                handle exception
+            }finally(){
+                always excecutes after try catch block completed 
+            }
+
+
+        4. custom exceptions
+        --------------------------
+
+            these are exceptions we can develop based on requirement 
+
+                by create new Exception class it Extends Exception Class 
+
+
+    Super and This Keyword :
+    ----------------------------------
+
+        super 
+        -----------
+            super keyword is used to refer the parent class methods 
+
+        this
+        -----
+                this keyword is used to refer the current instance of class 
+
+7. Memory Management
+--------------------------
+
+    1. heap memory
+    -------------------------
+
+        Dynamically allocated memory 
+
+    2. stack memory
+    --------------------------
+
+        used for static memory allocation 
+        Stores local variables and function call information.
+        stack memory is allocated faster 
+
+
+    3. Garbage Collection
+    ------------------------
+
+        automatic memory Management features  provided by languages by java 
+
+    4. Memory Leaks 
+    ----------------------
+
+    5. Memory Fragmentation
+    ---------------------------
+    
+
+8. Serialization & Deserialization
+------------------------------------
+
+9. spring and springboot difference
+-------------------------------------
+
+10. why springboot
+---------------------
+
+11. Spring 
+------------------
+
+12. Inversion of control
+----------------------------
+
+13. Dependancy injection
+----------------------------
+
+14. ORM Concepts
+-------------------
+
+15. @RestController, @RequestMapping
+----------------------------------------
+
+16. Annotations
+----------------------
+
+17. Entity Relationships (OneToOne, OneToMany, ManyToOne, ManyToMany)
+-------------------------------------------------------------------------
+
+18. What is the difference between JDK, JRE, and JVM?
+----------------------------------------------------
+
+19. What is the final keyword in Java? (final class, final method, final variable)
+-----------------------------------------------------------------------------------
+
+20.What is a static block, static method, and static variable?
+------------------------------------------------------------------
+
+21. Difference between == and .equals() method?
+-------------------------------------------------
+
+22. Difference between checked and unchecked exceptions?
+------------------------------------------------------------
+
+
+
+
+23. final variable, class,method and interface 
+-----------------------------------------------
+
+
+24. abstract variable,class,method,interface 
+---------------------------------------------------
+
+25. difference between jdk,jre,JVM
+--------------------------------------------
+
+26. interface and functional interface 
+----------------------------------------------
+
+27. constructor types 
+-------------------------------
+
+28. static variable, class,method and interface 
+-----------------------------------------------
+
+29. marker interface 
+--------------------------
+
+30. wrapper classess 
+-------------------------
+
+31. throw and throws 
+------------------------
+
+32. volatile keyword 
+---------------------
+
+33. life cycle of thread 
+----------------------------
+
+34. what are the steps to taken to create a API
+---------------------------------------------------
+
+35. Annotations in springboot
+--------------------------------------
+
+    1. Rest Controller 
+    -------------------------
+
+    2. Transactional
+    --------------------------
+    3. Service
+    -----------------------
+    4. Repository
+    --------------------
+    5. Entity
+    ------------------
+    6. RequestBody
+    ---------------------
+    7. RequestParams
+    --------------------
+    8. id
+    --------
+    9. PathVariable
+    --------------------
+
+
+36. Hibernate 
+----------------------
+
+    1. OneToOne
+    --------------
+    2. OneToMany
+    -----------------
+    3. ManyToOne
+    ----------------
+    4. ManyToMany
+    --------------------
+
+37. Liquibase 
+--------------
+
+38. JDBC
+-----------
+
+39. JPA
+-----------
+
+40. difference between each lists 
+---------------------------------------
+
+    1. ArrayList and LinkedList
+    --------------------------------
+
+    2. set and array
+    ------------------
+
+    3. hashset and linkedhashset and treeset 
+    ----------------------------------------
+
+    4. hashmap and hashset
+    ------------------------------
+
+    5. queue and deque
+    -----------------------
+
+
+41. How to create pagination 
+--------------------------------
+    1. pAgeble Interface 
+    -----------------------------
+
+        page and size 
+        ------------------
+
+
+42. Table Criteria
+-----------------------
+
+43. Comparator and Comparing
+------------------------------------
+
+44. Runnable 
+-----------------
+
+45. How Spring Security will works and how you will handle 
+----------------------------------------------------------------
+
+46. access modifers
+--------------------------
+    public
+    -------------
+
+    private
+    ----------
+
+    protected 
+    -------------
+
+    default
+    ----------
+
+47. Sql methods
+------------------------
+    1. Joins
+    ------------------
+        1. innerjoin
+        -----------------
+
+            there is match in both Tables then return matched rows only 
+
+        2. outer join
+        -------------------
+
+            it reurn all rows from one table if matching add extra column added data or return null 
+
+            1. left outer join / left join
+            ----------------------------------
+
+                return all records from left table,non match retun null
+
+            2. right outer join / right join
+            -----------------------------------
+
+                 return all records from right table ,non match retun null
+
+            3. full outer join
+            -------------------------
+            This will return all records from both tables, non match retun null
+
+    2. keywords
+    ------------------
+
+        1.Select 
+        2. * 
+        3. from
+        4. Insert into
+        4. Find
+        6. groupby
+        7. orderedBy
+        8. having
+        9. update
+        10. delete 
+        11. distinct 
+
+48. 
+
+
+
+
+

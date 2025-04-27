@@ -180,47 +180,228 @@
 
 14. view child and view children , contentchild and contentchildren 
 -------------------------------------------------------------------------------
+    view Child 
+    --------------
 
+        allow access of one one element or one child component declared inside the template
+
+    viewChildren
+    --------------
+
+        allow access of multiple elements inside the template
+
+    content childresn 
+    --------------------
+
+        allow access of one element or template content projected inside the component
+    
+    contentchildren
+    -----------------
+        allow access of multiple elements in conent projected inside component 
 
 
 15. Performance Optimization
 ---------------------------------
-
+    lazy modules 
+    track by for ngFor
+    ChangeDetection on push 
+    avoid complex logic in template file move it into ts file 
+    using pure pipes instead of using methods in templated
 
 16. Change Detection Strategy 
 -------------------------------
 
+    angular used change detection to check when the modal changes then it triggers 
+
+    by default : it renders every component and sub component
+    by onPush : it triggers only input value changes thhen only it triggers 
+
+
 17. what is rxjs
 --------------------------
+
+
+    reactive extension of javascript
+    ----------------------------------
+
+        it is used to process the asynchronous operations 
 
 18. subscribe , unsubscribe , emit , next , observables 
 -------------------------------------------------------------
 
+    Observables 
+    ----------------
+
+        a stream of data that ccan be listned 
+
+    subscribe
+    --------------
+
+        after subscribing then only we get the value from the observables
+
+    emit : 
+    -------
+
+        observables can emit the values that values should be catch after subscribe
+
+    next 
+    --------
+        same as emit 
+
+        in observables system can decide how to emit the values 
+
+        in subject we can decide when to emit 
+
 19. subject and behaviourSubject
 ---------------------------------------
 
-20.signal
+    behaviourSubject contains initial value and always emits the latest value 
+
+
+    subject has no initial value and emits value only after subscription
+
+
+
+20. signal
 ----------------
+
+    before signal whenver the value changes then renders the entire component 
+
+    but after using signal we change signal value wherever we use the signal that only be rendered 
 
 21. standalone
 ----------------------
 
+    standalone copmponent is a no dependancy on any Other modules 
+    more light wieght and eazier lazy loading 
+
 22. debounce and throttling
 ------------------------------
+    debounce : wait until a specific function to be called off 
 
-23.fork join and switchMap 
+    throttling : ensure function is called after specific time interval 
+
+23. fork join and switchMap 
 ------------------------------
+
+    forkjoin 
+    -----------------
+
+        executes multiple methods a time 
+
+    switch map 
+    -------------
+        cancel the previous request and calls new request 
 
 24. Promises 
 --------------------
 
+    it is used to asynchrounous operations 
+
+    until we wait the method is completed 
+
 25. event looping
 ------------------------
+
+    JS is single threaded it means it executed ine piece of code at one time 
+
+    event loop is a mechanism that synchrnous code will be converted to asynchrounous code 
+     without blocking the main thread 
 
 26. let const and var
 ------------------------
 
+
+
 27. Route guards 
 -------------------------
 
-28. 
+    route guards is used to weather the rout can be accesed or not 
+
+    can activate , can deactivate , canLoad, canActivteChild 
+
+28. router outlet
+---------------------------
+
+    router component is a placeholder where the routed components can be siplayed 
+
+29. Http Request 
+-----------------------
+
+    HttpModule is used to send http Requests 
+
+
+30. @input @output eventemitters 
+--------------------------------------
+
+    input 
+    --------
+        received data from parent 
+    output 
+    --------
+
+        recived data from child 
+
+    event emitters 
+    ---------------
+
+        output send th data by using eventEmitters 
+
+31. closures
+---------------------------
+
+    closues is a one function is called in anotehr function 
+
+        inner function can be accessible for outer function varibale
+
+32. query params
+-------------------------
+    query params are used to pass the data from one component to another component by routing 
+
+33. string methods and array methods
+-------------------------------------------
+
+    String methods
+    -----------------------
+        1. toUpperCase()
+        2. toLowerCase()
+        3. split("")
+        4. charAt(i)
+        5. conact
+        6. substring(start,end)
+        7 trim()
+        8 includes 
+        9 indexOf 
+        10. replace 
+        11. 
+
+
+
+    Array methods
+    -------------------
+
+        1. Filter
+        2. Find
+        3. some
+        4. every 
+        5. includes
+        6. forEach
+        7. map
+        8. reduce 
+        9. sort 
+        10. flat
+        11. findIndex    
+        12. slice(startIndex,endIndex) 1-3 3 is not included 
+        ---------------
+            in slice without original array chnaged and return nrew array
+        13. splice(startIndex,count to remove, addingelemnets)    
+        ------------------
+            it modifies original array 
+
+34. HttpInterceptors
+------------------------------
+
+
+35. How to handle bulk data 
+---------------------------------
+
