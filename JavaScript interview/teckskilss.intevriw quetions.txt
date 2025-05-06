@@ -1,0 +1,100 @@
+1. self introduction
+--------------------------
+
+2. spring mvc 
+-----------------------
+
+3. java and angular integration
+------------------------------------
+
+4. Servelets
+----------------------------
+
+5. How you will deploy a project 
+------------------------------------
+
+6. Integrations in Aws 
+------------------------------
+
+7. Spring and springboot architecture 
+----------------------------------------
+
+8. how to we submit the form and how to store and how to feedback gives to the user and user can also reply ? give me complete set up 
+    from angular to java springboot by using database
+    ---------------------------------------------------------------------------------------------------
+
+9. types of mvc 
+------------------------------
+
+10. sprintsheet life cycle 
+-----------------------------------
+
+11. architecture of angular 
+-----------------------------------
+
+12. how you will design the project from initial stage from frontend and backend 
+------------------------------------------------------------------------------------
+
+13. we design a project without a figma then 
+-------------------------------------------------------
+
+14. architecture of mvc 
+---------------------------------
+
+15. how to connect angular project to environment based urls 
+-------------------------------------------------------------------
+    environment.ts 
+    ------------------
+
+    enivronment.prod.ts
+    ----------------------
+
+16. what is dto in java 
+-----------------------------
+
+17.  How will you implement file/image upload from Angular to Java backend?
+-----------------------------------------------------------------------------------------
+
+
+
+18.How will you secure APIs in real-time applications?
+-------------------------------------------------------------
+
+19. How to optimize an Angular application before production deployment?
+------------------------------------------------------------------------------
+
+20. how do you will approve project performance both in frontend and backend ie, java and angular 
+----------------------------------------------------------------------------------------------------
+
+21. cors aonfiguration
+--------------------------------
+
+22. csrf configaratiion
+----------------------------
+
+23. ssl certificate
+-----------------------------
+
+24. what should you do under pressure
+-----------------------------------------
+
+25. what should you do for on-time delivery 
+-----------------------------------------------
+
+26. when timelines are getting too close then what should you do 
+------------------------------------------------------------------
+
+27. why you are coming to it from mba 
+---------------------------------------------
+
+28. where you seen after 3 years 
+-------------------------------------------
+
+29. explain about project detials
+------------------------------------------
+
+30. what was you are doing in project 
+-------------------------------------------
+
+
+

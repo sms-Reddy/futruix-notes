@@ -1,0 +1,52 @@
+S3 (Simple Storage serivce);
+-------------------------------------
+
+            it is a paid service 
+
+    1. we cant install any software 
+    2. we cannot attch s3 to ec2 
+    3. is used to store the data 
+    4. ec2 can access the data in s3 but se cannot attch ec2 
+    5. s3 is serverless
+    4. it provides unlimited storage
+    5. data will be stored using buckets 
+    6. bucket is a container it is used to store serveral objects 
+    7. bucket should be unique
+    8. s3 is global and bucket is regional
+    9. we cannot create bucket inside another bucket 
+    10. we can create multiple buckets in multiple regions
+    11. upto 100 buckets by defaults limit 
+    12. by default buckets is private and if you want we can change to public
+    13. every bucket has its own url 
+    14. S3 foloows it WORM (write once read many times )
+    15. S3 provides security 
+    16. S3 store and retrieve any amout of data from anywhere 
+    17. 
+
+
+
+S3 charges based on nof times we can access the data 
+S3 having storage class for data retrival 
+there are several classess based on class s3 will charge 
+
+if bucket is private we can change to public and pre assigned url then give to access to public for min and hours 
+
+
+
+    these abouve points in only in bucket level and applicable for all objects   
+    ---------------------------------------------------------
+    versioning   --maintain history
+    encryption  -- secure the data 
+    object level  -- is used to protect our objects 
+    transfer acceleration
+    ----------------------------
+
+        it is used to transfer the data from local to se storage 
+
+        after creation with versioning enabled after  we cannot disbaled it but we can pause it .
+
+        static website hosting in s3
+        ----------------------------------
+
+        
+    

@@ -1,0 +1,27 @@
+RDS (Relational Database Service)
+============================================
+    1. rds is used to create a relational Database in aws cloud ex: mySql,postgreSql,oracle,
+    2. relational Database also called SQL Database
+    3. sql database will be stored in table format 
+    4.  
+
+
+
+
+
+
+
+
+
+
+
+ROUTE 53
+-----------------------------
+    it is used to map our application to dmoain name 
+
+
+
+    postgres
+    Mrreddy_1234
+
+    database-1.cvamwkeacnf9.eu-north-1.rds.amazonaws.com

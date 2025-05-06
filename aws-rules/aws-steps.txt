@@ -201,6 +201,52 @@ Snapshots
 
     by defaulty it is private and we convert into public 
 
+    how to copy one instance data to another instance data 
+
+    life cycle of create snapshot 
+    ----------------------------------
+
+        it may be used for when to auto create a snapshot for backup 
+
+        when we create ec2 then mandatory to create ebs 
+
+    
+
+
+how to install webserver and deploy static website
+--------------------------------------------------------
+    sudo yum update -y 
+
+    sudo yum httpd  -- install
+
+    sudo systemctl start httpd -- start 
+
+    access ec2-vm public ip in browser 
+
+        note : we need to enable to security group in 80 
+
+    cd /var/www/html to open html page
+    sudo vi index.html page 
+
+
+
+
+
+UserData in Ec2
+--------------------------
+
+    userdata is used to execute the script when ec2 isntance launched first time 
+
+    we can say userdata is a default script when ec2 is launched 
+
+    note : when we stop and start then userdata is not execute 
+
+    sudo su
+    yum update -y 
+    yum install httpd -y
+    cd var/www/html 
+    echo  "wewrwe some data  " > index.html
+    systemstl start httpd 
 
 
 
@@ -209,6 +255,94 @@ Snapshots
 
 
 
+
+
+Load Balancing and Auto Scaling
+---------------------------------------------
+
+    load balancers are used to distribute the work load to multiple servers 
+
+    the process of running our application in multiple servers is called Load Balancing 
+
+    to implement load balancing we will use load balancer
+
+    it will distribute the requests in round robin fashion 
+
+    4 types of loadbalancers
+    ---------------------------
+        1. application Load Balancers
+        2. network
+        3. gateway 
+        4. classic 
+
+    
+    to implement load balancer for http and https we go for application Load Balancers
+
+    by using application we can implement path based routing 
+
+
+    Setup application LB
+    ----------------------
+
+        create 3 instance creations 
+
+        create target group with abouve 3 instances 
+
+        create application Lb using target group
+
+        access the application LB using DNS 
+
+
+        tcp used for network and it will be superfast 
+
+        gateway when third parties we can use 
+
+
+        application is in 2 ways
+        -------------------------------
+
+            monolith and microservices
+            --------------------------------------
+
+                monilith application is developed in one project
+
+            microservices
+            -----------------
+
+                microservices are load balancers with routing added in listners rules 
+
+Auto Scaling
+------------------------
+    rpm increases then go for scale up
+    rpm decrease then go for scale down
+
+
+    advantages
+    ----------------------
+    if any instance is unheakth then it will terminate and add new insatnce -- fault tolernace
+    availability 
+    cost management
+
+    autoscaling create we want launch templates
+    1. steps to create
+
+    1.launch template --> auto scaling group in min and max and desired quantity 
+        scaling policy (rpm,cpu utilization)
+    2. connect to load balancer
+    3. 
+
+
+how to connect ec2 without pem file 
+----------------------------------------------
+
+    stop instance 
+    deattach root volume 
+    create another instance 
+    attach root volume to new istance 
+    copy pem key to root to attach 
+    and stop instance 
+    deattch 
+    attach to instance by sunf xvda means root volume 
 
 
 
@@ -224,6 +358,10 @@ connect windows
 volumes
 additional volumes
 snapshots
-
+webserver and httpd
+userData
+Load Balancers
+target groups for monolith and microservices 
+auto-scaling 
 
 
